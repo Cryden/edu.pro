@@ -1,0 +1,17 @@
+//- index.pug
+
+extends ./layout/layout.pug
+
+block content
+	.jumbotron
+		.row#uploader
+			.col-xs-12
+				.panel.panel-default
+					.panel-body
+						span.glyphicon.glyphicon-cloud-upload
+						h2 Импортирование файла БД
+						h4 загрузите xml файл с выгрузкой из БД
+						div.progress
+							div.progress-bar(role="progressbar")
+						button.btn.btn-lg.upload-btn(type="button") Импорт
+		input#upload-input(type="file" name="uploads")
